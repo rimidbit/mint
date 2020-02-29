@@ -9,11 +9,12 @@
   <body>
     <div class="container">
       <header class="header">
+        <div class="header__decor"></div>
         <div class="header__phone">
           <img src="img/icon-phone.svg" alt="иконка телефона" class="header__phone-icon">
           <a href="tel:+71234567890" class="header__phone-link">+7 (123) 456 78 90</a>
         </div>
-        <a href=""><img src="img/logo.png" alt="логотип MINT"></a>
+        <a class="header__logo"><img src="img/logo.png" alt="логотип MINT"></a>
         <button class="button">заказать звонок</button>
       </header>
       <nav class="nav">
@@ -29,7 +30,7 @@
             <ul class="nav__services">
               <li><a href="" class="nav__servicesLink">Полный дизайн-проект</a></li>
               <li><a href="" class="nav__servicesLink">Стандартный дизайн-проект</a></li>
-              <li><a href="" class="nav__servicesLink">Чертёжный дизайн-проект</a></li>
+              <li><a href="projectWork.html" class="nav__servicesLink">Чертёжный дизайн-проект</a></li>
               <li><a href="" class="nav__servicesLink">Авторский надзор</a></li>
             </ul>
           </li>
@@ -137,6 +138,7 @@
     </main>
     <footer class="footer">
       <div class="container">
+        <div class="footer__decor"></div>
         <div class="footer__wrap">
           <span class="footer__copy">&#169M'INT 2020</span>
           <div class="footer__socialLink">
@@ -160,5 +162,43 @@
         </div>
       </div>
     </footer>
+    <div class="modalRequest">
+      <h2 class="modalHead">Оставить заявку</h2>
+      <p class="modalRequest__description">и получите расчет стоимости заказа <br>за 1 час и быстрее</p>
+      <form action="#" method="get" name="request" class="modalRequest__form">
+        <div class="modalRequest__formWrap">
+          <div class="modalRequest__formItem">
+            <div class="modalRequest__element">
+              <input type="text" class="modalRequest__input" id="name" placeholder="Ваше имя">
+              <label class="visually-hidden" for="name">имя</label>
+            </div>
+            <div class="modalRequest__element modalRequest__element--phone">
+              <input type="text" class="modalRequest__input" id="phone" placeholder="Ваш телефон">
+              <label class="visually-hidden" for="phone">телефон</label>
+            </div>
+            <div class="modalRequest__element modalRequest__element--mail">
+              <input type="text" class="modalRequest__input" id="mail" placeholder="Ваш email">
+              <label class="visually-hidden" for="mail">почта</label>
+            </div>
+            <div class="modalRequest__element modalRequest__element--file">
+              <input class="visually-hidden" id="file" type="file" name="file" multiple>
+              <label class="modalRequest__file" for="file">Выберите файл</label>
+            </div>
+          </div>
+          <div class="modalRequest__formItem">
+            <label class="modalRequest__labelText" for="comments">Коментарий к заявке</label>
+            <textarea class="modalRequest__text" id="comments" name="comments" placeholder="Например площадь вашей квартиры или дома. Пожелания к дизайн-проекту"></textarea>
+          </div>
+        </div>
+        <button class="button">заказать звонок</button>
+        <button class="buttonClosed"><img src="img/closed.png" alt="иконка закрыть"></button>
+      </form>
+    </div>
+    <div class="modalLuck">
+      <h2 class="modalHead">заявка отправлена</h2>
+      <p class="modalLuck__description">Мы свяжемся с Вами в течении часа</p>
+      <p class="modalLuck__text">А чтобы скоротать время, и за одно познакомиться поближе, рекомендуем прочитать пару-тройку статей в <a href="blog.html" class="modalLuck__link">нашем блоге</a></p>
+      <button class="buttonClosed"><img src="img/closed.png" alt="иконка закрыть"></button>
+    </div>
   </body>
 </html>
