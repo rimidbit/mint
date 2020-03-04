@@ -18,6 +18,8 @@
         <div class="header__decor header__decor--services"></div>
       </header>
       <nav class="nav">
+        <input type="checkbox" id="menu" name="toggle" class="nav__toggleMenu">
+        <label for="menu" class="nav__toggleMenu">меню</label>
         <ul class="nav__list">
           <li>
             <a href="index.html" class="nav__link">главная</a>
@@ -26,12 +28,14 @@
             <a href="portfolio.html" class="nav__link">портфолио</a>
           </li>
           <li class="nav__container">
-            <a href="" class="nav__link nav__link--active">услуги</a>
+            <input type="checkbox" id="subMenu" name="toggle" class="nav__toggleSubMenu">
+            <a class="nav__link nav__link--active">услуги</a>
+            <label for="subMenu" class="nav__toggleSubMenu"><img src="img/icon-arrow.svg" alt="стрелка вниз" class="nav__toggleIcon"></label>
             <ul class="nav__services">
-              <li><a href="" class="nav__servicesLink">Полный дизайн-проект</a></li>
-              <li><a href="" class="nav__servicesLink">Стандартный дизайн-проект</a></li>
+              <li><a href="#" class="nav__servicesLink">Полный дизайн-проект</a></li>
+              <li><a href="#" class="nav__servicesLink">Стандартный дизайн-проект</a></li>
               <li><a href="projectWork.html" class="nav__servicesLink">Чертёжный дизайн-проект</a></li>
-              <li><a href="" class="nav__servicesLink">Авторский надзор</a></li>
+              <li><a href="#" class="nav__servicesLink">Авторский надзор</a></li>
             </ul>
           </li>
           <li>
@@ -55,7 +59,7 @@
           </div>
           <div class="services__name">
             <h2 class="services__head">Полный дизайн-проект</h2>
-            <a href="" class="button">подробнее</a>
+            <a href="#" class="button">подробнее</a>
           </div>
         </div>
         <div class="services__item">
@@ -64,7 +68,7 @@
           </div>
           <div class="services__name services__name--left">
             <h2 class="services__head">Стандартный дизайн-проект</h2>
-            <a href="" class="button">подробнее</a>
+            <a href="#" class="button">подробнее</a>
           </div>
         </div>
         <div class="services__item">
@@ -82,7 +86,7 @@
           </div>
           <div class="services__name services__name--left">
             <h2 class="services__head">Авторская поддержка</h2>
-            <a href="" class="button">подробнее</a>
+            <a href="#" class="button">подробнее</a>
           </div>
         </div>
         <p class="services__text">Возможны почасовые консультации, первый час 1500р, каждый последующий по 500р</p>
@@ -94,8 +98,8 @@
         <div class="footer__wrap">
           <span class="footer__copy">&#169M'INT 2020</span>
           <div class="footer__socialLink">
-            <a href=""><img src="img/icon-fb.svg" alt="дизайн-студия M'INT в фейсбуке"></a>
-            <a href=""><img src="img/icon-insta.svg" alt="дизайн-студия M'INT в инстаграмме"></a>
+            <a href="#"><img src="img/icon-fb.svg" alt="дизайн-студия M'INT в фейсбуке"></a>
+            <a href="#"><img src="img/icon-insta.svg" alt="дизайн-студия M'INT в инстаграмме"></a>
           </div>
           <div class="footer__contacts">
             <div class="footer__contactsItem">
