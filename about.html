@@ -24,18 +24,31 @@
           <li>
             <a href="index.html" class="nav__link">главная</a>
           </li>
-          <li>
+          <li class="nav__container">
+            <input type="checkbox" id="subMenu2" name="toggle" class="nav__toggleSubMenu">
             <a href="portfolio.html" class="nav__link">портфолио</a>
+            <label for="subMenu2" class="nav__toggleSubMenu"><img src="img/icon-arrow.svg" alt="стрелка вниз" class="nav__toggleIcon"></label>
+            <ul class="nav__submenu">
+              <li><a href="portfolioSection.html" class="nav__submenuLink">Кухни</a></li>
+              <li><a href="#" class="nav__submenuLink">Гостиные</a></li>
+              <li><a href="#" class="nav__submenuLink">Спальни</a></li>
+              <li><a href="#" class="nav__submenuLink">Детские</a></li>
+              <li><a href="#" class="nav__submenuLink">Прихожие</a></li>
+              <li><a href="#" class="nav__submenuLink">Кафе</a></li>
+              <li><a href="#" class="nav__submenuLink">Офисы</a></li>
+              <li><a href="#" class="nav__submenuLink">Ванные комнаты</a></li>
+              <li><a href="#" class="nav__submenuLink">Санузлы/постирочные</a></li>
+            </ul>
           </li>
           <li class="nav__container">
             <input type="checkbox" id="subMenu" name="toggle" class="nav__toggleSubMenu">
             <a href="services.html" class="nav__link">услуги</a>
             <label for="subMenu" class="nav__toggleSubMenu"><img src="img/icon-arrow.svg" alt="стрелка вниз" class="nav__toggleIcon"></label>
-            <ul class="nav__services">
-              <li><a href="#" class="nav__servicesLink">Полный дизайн-проект</a></li>
-              <li><a href="#" class="nav__servicesLink">Стандартный дизайн-проект</a></li>
-              <li><a href="#" class="nav__servicesLink">Чертёжный дизайн-проект</a></li>
-              <li><a href="#" class="nav__servicesLink">Авторский надзор</a></li>
+            <ul class="nav__submenu">
+              <li><a href="#" class="nav__submenuLink">Полный дизайн-проект</a></li>
+              <li><a href="#" class="nav__submenuLink">Стандартный дизайн-проект</a></li>
+              <li><a href="#" class="nav__submenuLink">Чертёжный дизайн-проект</a></li>
+              <li><a href="#" class="nav__submenuLink">Авторский надзор</a></li>
             </ul>
           </li>
           <li>
